@@ -1,0 +1,44 @@
+i{
+    color: pink;
+    position: relative;
+    left: 30px;
+}
+
+#dribbleSearchBox{
+    width: 15rem;
+    height: 3rem;
+    padding-left: 33px;
+    padding-right: 5px;
+    transition: all 0.2s;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+#dribbleSearchBox:hover{
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 0px 5px rgba(255, 192, 203, 0.541);
+    background-color: white;
+}
+
+#dribbleSearchBox:focus{
+    outline: none;
+    background-color: white;
+    animation: pulsate-bck 0.2s ease-in-out both;
+}
+
+
+/* Keyframes section copied from Animista.net, modified by ozoani chidubem */
+@keyframes pulsate-bck {
+    0% {
+        outline: 1px solid rgba(206, 39, 67, 0.301);
+      box-shadow: 0px 0px 0px 5px rgba(255, 192, 203, 0.541);
+    }
+    50% {
+        outline: 1px solid rgba(206, 39, 67, 0.301);
+      box-shadow: 0px 0px 0px 0px rgba(255, 192, 203, 0.541);
+    }
+    100% {
+        outline: 1px solid rgba(206, 39, 67, 0.301);
+      box-shadow: 0px 0px 0px 6px rgba(255, 192, 203, 0.541);
+    }
+  }
